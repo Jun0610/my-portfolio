@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ensures website functions on small and larger devices -->
+    <title>Jun Shern's Portfolio Website</title>
+
+    <!-- Ensures web page responds well to different screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Usings for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap">
+
+    <link rel="stylesheet", href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class = "logo">
+            <img src="/img/logo1.png" alt="logo">
+        </div>
+        <button class="nav_toggle" aria-label="toggle navigation">
+            <span class="hamburger">
+
+            </span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <!-- href="#some_id" would scroll to that element of the page, its called an anchor-->
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="#projects" class="nav__link">My Projects</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Jun Shern Lim</strong>
+        </h1>
+            <p class="section__subtitle section__subtitle--intro">STUDENT/SOFTWARE-DEV</p>
+            <img src="img/me-3.png", alt="a picture of me" class="intro__img">
+        
+    </section>
+
+    <!-- About Me-->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">About Me</h2>
+        <p class="section__subtitle section__subtitle--about">Malaysian | Purdue CS '24 | Varsity Rower</p>
+        <img src="img/me-2.png", alt="a picture of me-2" class="about-me__img">
+        <div class="about-me__body">
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting 
+                industry. Lorem Ipsum has been the industry's standard dummy 
+                text ever since the 1500s, when an unknown printer took a galley 
+                of type and scrambled it to make a type specimen book. It has 
+                survived not only five centuries, but also the leap into 
+                electronic typesetting, remaining essentially unchanged. 
+                It was popularised in the 1960s with the release of Letraset 
+                sheets containing Lorem Ipsum passages, and more recently with 
+                desktop publishing software like Aldus PageMaker including versions 
+                of Lorem Ipsum
+
+            </p>
+        </div>
+
+    </section>
+
+    <!-- My Projects -->
+    <section class="my-projects" id="projects">
+        <h2 class="section__title--project">My Projects</h2>
+        <p class="section__subtitle--project">Some of my projects</p>
+
+        <div class="portfolio">
+            
+ 
+            <a href="https://github.com/Jun0610/text-compression-decompression" class="portfolio__item">
+                    <img src="./img/compression.webp" alt="portfolio_img" class="portfolio__img">
+                    <div class="portfolio__description">
+                        <h3 class="portfolio__title">Text Compression Software</h3>
+                        <p class="portfolio__text">A terminal-based text compression software built upon Huffman Coding.</p>
+                    </div>
+            </a>
+        
+        
+            
+            
+  
+            <a href="https://gitfront.io/r/user-5107608/iHgdvzn1X1H6/Messaging-App/" class="portfolio__item"> 
+        
+                <img src="./img/client-server.png" alt="portfolio_img" class="portfolio__img">
+                <div class="portfolio__description">
+                    <h3 class="portfolio__title">Client-Server Messaging App</h3>
+                    <p class="portfolio__text">An instant messaging app built with the client-server model in Java.</p>
+                </div>
+        
+            </a>       
+   
+            
+    
+
+            <a href="https://github.com/Jun0610/BigBoiFinance" class="portfolio__item">
+    
+                <img src="./img/finance-bro.jpeg" alt="portfolio_img" class="portfolio__img">
+                <div class="portfolio__description">
+                    <h3 class="portfolio__title">Financial Summarizer Web App</h3>
+                    <p class="portfolio__text"> A web app built for Hackillinois 2022 that queries that uses the SEC API to extract key financial information form public companies in the US.
+                    </p>
+                </div>
+            
+            </a>
+     
+                
+        
+            
+
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="mailto:lim321@purdue.edu" class="footer__link">lim321@purdue.edu</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/Jun0610">
+                    <i class="fa-brands fa-github"></i>
+                </a></li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/jun-shern-lim/">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a></li>
+        </ul>
+    </footer>
+    
+    <script src="index.js"></script>
+</body>
+</html>
