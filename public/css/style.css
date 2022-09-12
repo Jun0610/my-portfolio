@@ -345,8 +345,8 @@ header {
 /* My Projects */
 
 .portfolio {
-    max-width: 700px;
-    width: 80%;
+    max-width: 350px;
+    width: 100%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(1);
@@ -360,9 +360,8 @@ header {
     transition: transform 300ms cubic-bezier(.5, 0, .5, 1);
     margin-bottom: 1em;
     text-decoration: none;
-    max-height: 390px;
-    min-height: 390px;
     overflow-y: auto;
+    height: 350px;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
@@ -414,14 +413,14 @@ header {
 
 
 
-@media (min-width: 700px) {
+@media (min-width: 600px) {
     .portfolio {
         max-width: 1050px;
         margin: 0 auto;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         grid-column-gap: 20px ;
-    
+        
     }
 
     .portfolio__item{
@@ -430,8 +429,8 @@ header {
         transition: transform 300ms cubic-bezier(.5, 0, .5, 1);
         margin-bottom: 1em;
         text-decoration: none;
+        height: 380px;
         max-height: 400px;
-        
     }
     
     .my-projects {
