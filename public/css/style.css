@@ -345,7 +345,8 @@ header {
 /* My Projects */
 
 .portfolio {
-    max-width: 70%;
+    max-width: 700px;
+    width: 80%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(1);
@@ -354,15 +355,20 @@ header {
 }
 
 .portfolio__item{
-    overflow: hidden;
     background-color: var(--clr-light);
     box-shadow: var(--bs);
     transition: transform 300ms cubic-bezier(.5, 0, .5, 1);
     margin-bottom: 1em;
     text-decoration: none;
-    max-height: 350px;
-    min-height: 350px;
+    max-height: 390px;
+    min-height: 390px;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
 
+.portfolio__item::-webkit-scrollbar {
+    display: none;
 }
 
 .my-projects {
@@ -419,15 +425,13 @@ header {
     }
 
     .portfolio__item{
-        overflow: hidden;
         background-color: var(--clr-light);
         box-shadow: var(--bs);
         transition: transform 300ms cubic-bezier(.5, 0, .5, 1);
         margin-bottom: 1em;
         text-decoration: none;
         max-height: 400px;
-        overflow-y: auto;
-    
+        
     }
     
     .my-projects {
