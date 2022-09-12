@@ -16,6 +16,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap">
 
     <link rel="stylesheet", href="css/style.css">
+
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
 </head>
 <body>
     <header>
@@ -33,6 +38,7 @@
                 <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
                 <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
                 <li class="nav__item"><a href="#projects" class="nav__link">My Projects</a></li>
+                <li class="nav__item"><a href="#fun" class="nav__link">Rowing Pictures</a></li>
             </ul>
 
         </nav>
@@ -44,38 +50,38 @@
         <h1 class="section__title section__title--intro">
             Hi, I am <strong>Jun Shern Lim</strong>
         </h1>
-            <p class="section__subtitle section__subtitle--intro">STUDENT/SOFTWARE-DEV</p>
-            <img src="img/me-3.png", alt="a picture of me" class="intro__img">
-        
+        <p class="section__subtitle section__subtitle--intro">STUDENT/SOFTWARE-DEV</p>
+        <img src="img/me-3.png", alt="a picture of me" class="intro__img">
+    
     </section>
 
     <!-- About Me-->
     <section class="about-me" id="about">
         <h2 class="section__title section__title--about">About Me</h2>
         <p class="section__subtitle section__subtitle--about">Malaysian | Purdue CS '24 | Varsity Rower</p>
-        <img src="img/me-2.png", alt="a picture of me-2" class="about-me__img">
+       
         <div class="about-me__body">
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting 
-                industry. Lorem Ipsum has been the industry's standard dummy 
-                text ever since the 1500s, when an unknown printer took a galley 
-                of type and scrambled it to make a type specimen book. It has 
-                survived not only five centuries, but also the leap into 
-                electronic typesetting, remaining essentially unchanged. 
-                It was popularised in the 1960s with the release of Letraset 
-                sheets containing Lorem Ipsum passages, and more recently with 
-                desktop publishing software like Aldus PageMaker including versions 
-                of Lorem Ipsum
+                I am excited about writing great software to solve real-world problems.
+                Some of my interests wihtin CS include software engineering,
+                computer networks, and database & information systems. In my free time,
+                I TA an undergraduate Data Structures & Algorithms class. I also love 
+                working on side projects, staying healthy, and spending quality time with friends & family.
+
 
             </p>
         </div>
+        <img src="img/me-2.png", alt="a picture of me-2" class="about-me__img">
+
+       
+    
 
     </section>
 
     <!-- My Projects -->
     <section class="my-projects" id="projects">
         <h2 class="section__title--project">My Projects</h2>
-        <p class="section__subtitle--project">Some of my projects</p>
+        <p class="section__subtitle--project">Some of the stuff I've been working on</p>
 
         <div class="portfolio">
             
@@ -110,7 +116,7 @@
                 <img src="./img/finance-bro.jpeg" alt="portfolio_img" class="portfolio__img">
                 <div class="portfolio__description">
                     <h3 class="portfolio__title">Financial Summarizer Web App</h3>
-                    <p class="portfolio__text"> A web app built for Hackillinois 2022 that queries that uses the SEC API to extract key financial information form public companies in the US.
+                    <p class="portfolio__text"> A web app built for Hackillinois 2022 that uses the SEC API to extract key financial information form public companies in the US.
                     </p>
                 </div>
             
@@ -122,6 +128,46 @@
 
 
         </div>
+
+    </section>
+
+    <section class="funtimes" id="fun">
+        <div class="container">
+            <h2 class="funtimes-title">Some Really Cool Rowing Pics</h2>
+            <!-- Full-width images with number text -->
+            
+
+    
+            <div class="mySlides">
+            <img src="./img/rowing1.png", alt="Preparing to launch for the Southern Intercollegiate Rowing Association Championships!", class="funtimes-img">
+            </div>
+    
+            <div class="mySlides">
+                <img src="./img/rowing6.png", alt="2022 2ACRA National Championship Race", class="funtimes-img long">
+                </div>
+
+            <div class="mySlides">
+                <img src="./img/rowing9.png", alt="Trying to look backwards to steer a boat and row at the same time is probably the hardest thing I've had to do.", class="funtimes-img">
+                </div>
+        
+    
+    
+            <div class="mySlides">
+                <img src="./img/rowing3.png", alt="Purdue Crew - 2022 National Champions", class="funtimes-img">
+                </div>
+    
+           
+        
+    
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <!-- Image text -->
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+    </div>
 
     </section>
 
@@ -139,7 +185,10 @@
                 </a></li>
         </ul>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     
     <script src="index.js"></script>
 </body>
+
 </html>

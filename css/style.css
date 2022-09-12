@@ -25,9 +25,12 @@
     --fs-h4: 1rem;
     --fs-nav: 2rem;
     --fs-body: 1rem;
+    --fs-caption: 0.8rem;
 
     --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 
           0.125em 0.125em 0.25em rgba(0, 0,0,0.15);
+
+    --swiper-navigation-size: 20px !important;
 }
 
 @media (min-width: 800px) {
@@ -38,6 +41,8 @@
         --fs-nav: 2.25rem;
         --fs-h4: 1rem;
         --fs-body: 1.25rem;
+        --fs-caption: 1rem;
+        --swiper-navigation-size: 35px !important;
     }
 }
 
@@ -125,10 +130,21 @@ header {
     justify-content:space-between;
     padding: 1em;
 }
+
 .logo {
-    max-width: 200px;
-    padding-left: 1em;
+    max-width: 150px;
+    padding-left: 0.1em;
 }
+
+@media (min-width: 600px) {
+    .logo {
+        max-width: 200px;
+        padding-left: 0.1em;
+    }
+}
+
+
+
 
 .nav {
     position: fixed;
@@ -231,32 +247,37 @@ header {
 
 .section__subtitle--intro {
     display: inline-block;
+    
 }
 
 .intro {
     position: relative;
+    justify-content: center;
 }
 
 .intro__img {
     box-shadow: var(--bs);
+    
 }
 
 
 @media (min-width: 600px) {
     .intro {
         display: grid;
-        width: max-content;
+        max-width: 100%;
+        width: min-content;
         margin: 0 auto;
         grid-column-gap: 1em;
         grid-template-areas:
             "img title"
             "img subtitle";
         grid-template-columns: min-content max-content;
+        
     }
 
     .intro__img {
         grid-area: img;
-        min-width: 300px;
+        min-width: 280px;
         position: relative;
         z-index: 2;
     }
@@ -270,10 +291,9 @@ header {
         position: relative;
         left: -1.5em;
         width: calc(100% + 1.5em);
+        padding-left: 3em;
         
     }
-
-
 }
 
 
@@ -281,6 +301,7 @@ header {
     max-width: 1100px;
     margin: 0 auto;
 }
+
 
 .about-me__img {
     box-shadow: var(--bs);
@@ -293,6 +314,9 @@ header {
         grid-template-areas: 
             "title img"
             "subtitle img"
+            "text img"
+            "text img"
+            "text img"
             "text img";
         grid-column-gap: 2em;
     }
@@ -308,7 +332,7 @@ header {
         left: -1em;
         width: calc(100% + 2em);
         padding-left: 1em;
-        padding-right: calc(150px + 6.2em);
+        padding-right: calc(300px + 2em);
     }
 
     .about-me__img {
@@ -432,6 +456,96 @@ header {
 
 
 }
+
+/* Funtimes */
+
+.funtimes {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.funtimes-title {
+    text-align: center;
+    border-bottom: 5px #16e0bd solid;
+    margin-bottom: 0.5em;
+    
+}
+
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+    }
+    
+    /* Hide the images by default */
+    .mySlides {
+    display: none;
+    }
+    
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+    cursor: pointer;
+    }
+    
+    /* Next & previous buttons */
+    .prev,
+    .next {
+    cursor: pointer;
+    position: absolute;
+    top: 55%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: var(--clr-accent);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    
+    /* Container for image text */
+    .caption-container {
+    color: var(--clr-dark);
+    text-align: center;
+    background-color: var(--clr-light);
+    margin-top: 10px;
+    padding: 2px 10px;
+    
+    }
+    
+    .funtimes-img {
+    
+        max-height: 600px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        box-shadow: var(--bs);
+    }
+    
+    .vert {
+        height: 30%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 32.6%;
+    
+    }
+
 
 
 /* Footer */
