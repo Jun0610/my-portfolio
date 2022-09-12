@@ -426,6 +426,7 @@ header {
         margin-bottom: 1em;
         text-decoration: none;
         max-height: 400px;
+        overflow-y: auto;
     
     }
     
