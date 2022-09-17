@@ -122,6 +122,42 @@ h4 { font-size: var(--fs-h4);}
     z-index: 2;
 }
 
+.hidden {
+    opacity: 0;
+    filter: blur(2px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.about-me {
+    transform: translateX(100%);
+}
+
+.container .hidden {
+    transition-delay: 1000ms;
+}
+
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.show .portfolio__item {
+    opacity: 1;
+}
+
+
+
+
+
+@media (prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
 
 
 /* header */

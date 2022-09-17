@@ -59,3 +59,18 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+
+const observer = new IntersectionObserver ((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
+  });
+});
+const hiddenElements = document.querySelectorAll('.hidden');
+
+hiddenElements.forEach((e1) => observer.observe(e1));
