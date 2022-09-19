@@ -15,7 +15,7 @@
     --fw-reg: 300;
     --fw-bold: 900;
 
-    --clr-light: #fff;
+    --clr-light: #fff ;
     --clr-dark: #303030;
     --clr-accent: #16e0bd;
 
@@ -50,7 +50,7 @@
 
 body {
     background: var(--clr-light);
-    color: car(--clr-dark);
+    color: var(--clr-dark);
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
@@ -163,7 +163,7 @@ h4 { font-size: var(--fs-h4);}
 /* header */
 header {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     padding: 1em;
 }
 
@@ -178,7 +178,6 @@ header {
         padding-left: 0.1em;
     }
 }
-
 
 
 
@@ -227,8 +226,8 @@ header {
     background: transparent;
     cursor:pointer;
     position: absolute;
-    right: 1em;
-    top: 1em;
+    right: 1.3em;
+    top: 1.3em;
     z-index: 1000;
 }
 
@@ -249,9 +248,7 @@ header {
 }
 
 
-
 .hamburger {
-    
     display: block;
     position: relative;
 }
@@ -278,6 +275,11 @@ header {
 
 .hamburger::before {top: 6px;}
 .hamburger::after {bottom: 6px;}
+
+
+
+
+
 
 /* Intro Section */
 
