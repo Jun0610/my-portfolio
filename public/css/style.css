@@ -197,6 +197,29 @@ header {
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
 
+.resume {
+    font-size: 1em;
+    padding-top: 0.1em;
+    padding-right: 1em;
+    border: 0;
+    background: transparent;
+    cursor:pointer;
+    position: absolute;
+    right: 4em;
+    z-index: 1000;
+    font-style: none;
+}
+
+.resume_download {
+    text-decoration: none;
+    color: #303030;
+    font-weight: 900;
+}
+
+.resume_download:hover {
+    text-decoration: underline;
+}
+
 .nav__list {
     list-style: none;
     display: flex;
